@@ -1,0 +1,17 @@
+<p>Teste view 1.</p>
+
+<div class="msg">{{message}}</div>
+
+<table>
+	<tr>
+		<th>Nome</th>
+		<th>Preço</th>
+		<th>Remover</th>
+	</tr>
+	<tr ng-repeat="beer in list">
+
+		<td><a href="#/beers/{{beer._id}}">{{beer.name}}</a></td>
+		<td>{{beer.price}}</td>
+		<td> <a data-ng-click="remove(beer)">X</a></td>
+	</tr>
+</table>
