@@ -9,7 +9,6 @@
 		<th>Remover</th>
 	</tr>
 	<tr ng-repeat="beer in list">
-
 		<td><a href="#/beers/{{beer._id}}">{{beer.name}}</a></td>
 		<td>{{beer.price}}</td>
 		<td> <a data-ng-click="remove(beer)">X</a></td>
